@@ -94,16 +94,17 @@ const float occlusionMapLoopNum = 1.0;
 const float parallaxMapScale = 1.0;
 const float parallaxMapLoopNum = 1.0;
 
-#define EMISSIVE_ENABLE 0
-#define EMISSIVE_MAP_FROM 0
+//发光
+#define EMISSIVE_ENABLE 1
+#define EMISSIVE_MAP_FROM 3
 #define EMISSIVE_MAP_UV_FLIP 0
-#define EMISSIVE_MAP_APPLY_SCALE 0
+#define EMISSIVE_MAP_APPLY_SCALE 1
 #define EMISSIVE_MAP_APPLY_MORPH_COLOR 0
 #define EMISSIVE_MAP_APPLY_MORPH_INTENSITY 0
 #define EMISSIVE_MAP_APPLY_BLINK 0
 #define EMISSIVE_MAP_FILE "emissive.png"
 
-const float3 emissive = 1.0;
+const float3 emissive = 3.0;
 const float3 emissiveBlink = 1.0;
 const float  emissiveIntensity = 1.0;
 const float2 emissiveMapLoopNum = 1.0;
@@ -119,7 +120,7 @@ const float2 emissiveMapLoopNum = 1.0;
 #define CUSTOM_A_MAP_FILE "custom.png"
 
 //阴影参数
-const float customA = 0.5;
+const float customA = 0.3;
 const float customAMapLoopNum = 1.0;
 
 #define CUSTOM_B_MAP_FROM 0

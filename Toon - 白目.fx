@@ -16,8 +16,8 @@ const float2 albedoMapLoopNum = 1.0;
 #define ALBEDO_SUB_MAP_FILE "albedo.png"
 
 //反光颜色（RGB通道需要进行归一化操作），范围0-1
-//const float3 albedoSub = float(R,G,B);
-const float3 albedoSub = 0.7;
+//const float3 albedoSub = float3(R,G,B);
+const float3 albedoSub = 1.0;
 const float2 albedoSubMapLoopNum = 1.0;
 
 #define ALPHA_MAP_FROM 3
@@ -31,7 +31,7 @@ const float alphaMapLoopNum = 1.0;
 #define NORMAL_MAP_FROM 0
 #define NORMAL_MAP_TYPE 0
 #define NORMAL_MAP_UV_FLIP 0
-#define NORMAL_MAP_FILE "normal.png"
+#define NORMAL_MAP_FILE "NM-Fabric01.png"
 
 const float normalMapScale = 1.0;
 const float normalMapLoopNum = 1.0;
@@ -52,7 +52,7 @@ const float normalSubMapLoopNum = 1.0;
 #define SMOOTHNESS_MAP_APPLY_SCALE 0
 #define SMOOTHNESS_MAP_FILE "smoothness.png"
 
-const float smoothness = 0.0;
+const float smoothness = 0.6;
 const float smoothnessMapLoopNum = 1.0;
 
 #define METALNESS_MAP_FROM 0
@@ -72,7 +72,7 @@ const float metalnessMapLoopNum = 1.0;
 #define SPECULAR_MAP_APPLY_SCALE 0
 #define SPECULAR_MAP_FILE "specular.png"
 
-const float3 specular = 0.5;
+const float3 specular = 0.3;
 const float2 specularMapLoopNum = 1.0;
 
 #define OCCLUSION_MAP_FROM 0
@@ -119,7 +119,7 @@ const float2 emissiveMapLoopNum = 1.0;
 #define CUSTOM_A_MAP_FILE "custom.png"
 
 //阴影参数
-const float customA = 0.5;
+const float customA = 0.0;
 const float customAMapLoopNum = 1.0;
 
 #define CUSTOM_B_MAP_FROM 0
@@ -128,7 +128,7 @@ const float customAMapLoopNum = 1.0;
 #define CUSTOM_B_MAP_APPLY_SCALE 0
 #define CUSTOM_B_MAP_FILE "custom.png"
 
-const float3 customB = float3(0.9,0.77,0.68);
+const float3 customB = 0.0;
 const float2 customBMapLoopNum = 1.0;
 
 #include "material_common_2.0.fxsub"
